@@ -1,11 +1,7 @@
-/* ============================================================
-   DakAt — Theme Variables
-   To add light mode: [data-theme="light"] { --bg-base: #fff; ... }
-   To add a new theme: [data-theme="ocean"] { --bg-base: #0a1628; ... }
-   ============================================================ */
+/*  DakAt — Theme Variables */
 
 :root {
-  /* --- Backgrounds --- */
+  /*  Backgrounds  */
   --bg-base:        #000000;
   --bg-surface:     #00000035;
   --bg-raised:      #0e0e0e;
@@ -16,30 +12,30 @@
   --bg-btn-hover:   #1a1a1a;
   --bg-btn-active:  #0d0d0d;
 
-  /* --- Text --- */
+  /*  Text  */
   --text-primary:   #e5e5e5;
   --text-input:     #f5f5f5;
 
-  /* --- Borders --- */
+  /*  Borders  */
   --border-default: #444444;
   --border-input:   #555555;
   --border-btn:     #3a3a3a;
   --border-btn-hover: #4d4d4d;
   --border-btn-active: #666666;
 
-  /* --- Accent / Interactive --- */
+  /*  Accent / Interactive  */
   --color-link:     #7fb4ff;
   --color-focus:    #3b82f6;
 
-  /* --- Misc --- */
+  /*  Misc  */
   --radius-base:    8px;
   --radius-btn:     6px;
 }
 
 
-/* ============================================================
+/* 
    Base page
-   ============================================================ */
+    */
 html, body {
   background-color: var(--bg-base) !important;
   color: var(--text-primary) !important;
@@ -63,26 +59,26 @@ aside, .sidebar {
 }
 
 
-/* ============================================================
+/* 
    Generic containers
-   ============================================================ */
+    */
 * {
   background-color: transparent !important;
   border-color: var(--border-default) !important;
 }
 
 
-/* ============================================================
+/* 
    Links
-   ============================================================ */
+    */
 a {
   color: var(--color-link) !important;
 }
 
 
-/* ============================================================
+/* 
    Inputs, textareas, selects
-   ============================================================ */
+    */
 input, textarea, select {
   background-color: var(--bg-input) !important;
   color: var(--text-input) !important;
@@ -90,17 +86,17 @@ input, textarea, select {
 }
 
 
-/* ============================================================
+/* 
    Forms
-   ============================================================ */
+    */
 form {
   background-color: var(--bg-raised) !important;
 }
 
 
-/* ============================================================
+/* 
    Buttons
-   ============================================================ */
+    */
 button,
 input[type="button"],
 input[type="submit"],
@@ -150,9 +146,9 @@ input[type="reset"]:focus-visible,
 }
 
 
-/* ============================================================
+/* 
    Media — keep untouched
-   ============================================================ */
+    */
 img, video, picture, canvas, svg {
   filter: none !important;
   mix-blend-mode: normal !important;
@@ -160,5 +156,5 @@ img, video, picture, canvas, svg {
 }
 
 svg {
-  stroke: var(--text-primary);
+  stroke: var(--text-primary) !important;
 }
